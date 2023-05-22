@@ -1,7 +1,32 @@
 Código remoto - Comandos:
 - git clone
+Crea una copia local del repositorio.
+Ej. git clone <repo_url>
+
 - git status
+Devuelve el estado actual del repositorio.
+Ej. git status
+
 - git add
+Prepara cambios (línea por línea) para ser incluidos en un commit.
+Ej 1. git add notas.txt (Agrega solo un 1 archivo).
+Ej 2. git add . (Agrega todos los archivos).
+
 - git commit
-- git fetch
+Crear un nuevo commit con los cambios que se prepararon con git add.
+Ej. git commit -m "Cambios"
+
 - git push
+Sincroniza la rama remota con lo que hay en la local. 
+En otras palabras, sube los commits que hay en la local y faltan en la remota.
+Ej. git push
+
+- git fetch
+Trae los metadatos sobre commits, ramas, ref, etc. de un repositorio remoto. 
+No descarga cambios a la rama local, solo trae los metadatos. 
+Ej. git fetch
+
+- git pull
+Sincroniza la rama local con lo que hay en la remota.
+En otras palabras, descarga los commits que hay en la remota y faltan en la local.
+Ej. git pull
